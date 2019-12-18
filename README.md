@@ -5,7 +5,7 @@ output:
   word_document: default
   pdf_document: default
 ---
-Human Activity Recognition Using Smartphones Dataset
+## *Human Activity Recognition Using Smartphones Dataset*
 
 The data is downloaded from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 The data sets contain observations from 30 volunteers on daily movement activities; Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing, Laying. The data were collected using wearable smarthphones. Several measurements were collected and these include the mean and standard deviation which will be the main components of our analysis. 

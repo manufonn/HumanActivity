@@ -218,7 +218,7 @@ cleanset <- meancombine19                # The final tidy data
  #         ) %>%
  #         view()
 ```
-## Please see READ.Me
+## Please see READMe
 
 ##      Thank You!
 

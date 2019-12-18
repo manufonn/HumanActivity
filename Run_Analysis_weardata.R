@@ -148,8 +148,7 @@ featcol4 <- add_row(featcol3, value = 1:2, .before = TRUE) %>% ## add two rows w
 
 meancombine15 <- comboset[c(featcol4)] #%>%  ##index the columns for selected variables
 # view()
-meancombine19 <- meancombine15 ## comment this out OR delete this line. adjust code
-#####try
+meancombine19 <- meancombine15 
 
 #meancombine10 <- comboset[c(featcol2)]
 
@@ -176,7 +175,7 @@ lesommer <- cleanset %>%     ## group first by subjects then Activities then cal
         group_by(Persons, Activ) %>%
         summarise_all( mean, na.rm = TRUE) %>%
         
-        ## view()
+        view()
         
         # lesommer2 <- cleanset %>%
         #         group_by(Persons, Activ) %>%

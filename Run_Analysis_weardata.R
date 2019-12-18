@@ -3,11 +3,14 @@
 
 
 ##  install.packages("tidyverse")
-## set working directory to wearfolder
-library(tidyverse)
 
+##  set working directory to wearfolder
+
+
+library(tidyverse)
 library(readr)
 library(dplyr)
+
 
 X_train <- read.table("train/X_train.txt")
 
@@ -42,8 +45,6 @@ xysubTestbind <- cbind(subject_test, xytestbind)
 comboset <- rbind(xysubTrainbind, xysubTestbind)
 
 #dim(comboset)
-
-
 
 
 
@@ -176,7 +177,15 @@ lesommer <- cleanset %>%     ## group first by subjects then Activities then cal
         summarise_all( mean, na.rm = TRUE) %>%
         
         view()
-        
+     
+#####################
+
+
+
+
+
+
+   
         # lesommer2 <- cleanset %>%
         #         group_by(Persons, Activ) %>%
         #         summarise(

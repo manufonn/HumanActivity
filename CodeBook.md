@@ -208,6 +208,8 @@ cleanset <- meancombine19                # The final tidy data
          
              view()
              
+             write.table(lesommer, file = "cleanset.txt", row.names = FALSE)
+             
              write.csv(lesommer, file = "cleanset.csv", row.names = FALSE)
  
  # lesommer2 <- cleanset %>%

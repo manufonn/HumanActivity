@@ -178,12 +178,14 @@ lesommer <- cleanset %>%     ## group first by subjects then Activities then cal
         
         view()
 
-write.csv(lesommer, file = "cleanset.csv", row.names = FALSE)
+write.table(lesommer, file = "cleanset.txt", row.names = FALSE)
+
+write.csv(lesommer, file = "cleanset2.csv", row.names = FALSE)
      
 #####################
 
 
-write.table() using row.name=FALSE
+
 
 
 

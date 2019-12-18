@@ -1,10 +1,7 @@
 ---
 title: "CodeBook.md"
 author: "EFon"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+
 ---
 
 
@@ -210,6 +207,8 @@ cleanset <- meancombine19                # The final tidy data
              summarise_all( mean, na.rm = TRUE)  %>%
          
              view()
+             
+             write.csv(lesommer, file = "cleanset.csv", row.names = FALSE)
  
  # lesommer2 <- cleanset %>%
  #         group_by(Persons, Activ) %>%

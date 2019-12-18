@@ -177,11 +177,13 @@ lesommer <- cleanset %>%     ## group first by subjects then Activities then cal
         summarise_all( mean, na.rm = TRUE) %>%
         
         view()
+
+write.csv(lesommer, file = "cleanset.csv", row.names = FALSE)
      
 #####################
 
 
-
+write.table() using row.name=FALSE
 
 
 
